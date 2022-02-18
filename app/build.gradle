@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+//    cool1234
+    signingConfigs {
+        debug {
+            storeFile file('simple.jks')
+            storePassword 'cool1234'
+            keyAlias = 'cool1234'
+            keyPassword 'cool1234'
+        }
+        release {
+            storeFile file('simple.jks')
+            storePassword 'cool1234'
+            keyAlias = 'cool1234'
+            keyPassword 'cool1234'
+        }
+    }
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cool.thejiangbf.flashlight"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.4"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+}

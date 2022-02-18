@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FullscreenActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0099cc">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:src="@drawable/ic_flashlight_off2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/rg_mode">
+
+            <RadioButton
+                android:id="@+id/rb_mode_light"
+                android:text="浅色模式"
+                android:textColor="#AAAAAA"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_mode_color"
+                android:text="炫彩模式"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/rb_mode_dark"
+                android:text="深色模式"
+                android:textColor="#666666"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>
